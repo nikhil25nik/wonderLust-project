@@ -1,0 +1,58 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .hero-section {
+        background-image: url('/img/mainimg.jpg');
+        /* Replace with your own image URL if needed */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-icon {
+      background-color: #ccc;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #000;
+    }
+</style>
+
+ <!-- Hero Section -->
+ <div class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-5 fw-bold mb-3">WonderLust takes care of business</h1>
+      <p class="lead mb-4">List your Home/Villa on WonderLust</p>
+      <div class="row justify-content-center g-2">
+      </div>
+      <!-- Explore Button -->
+      <div class="mt-3">
+        <a href="/listings" class="btn btn-light text-dark text-decoration-none">Explore</a>
+      </div>
+    </div>
+  </div>

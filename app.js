@@ -139,9 +139,9 @@ app.use("/",userRouter);
 
 
 
-// app.get("/", (req, res) => {
-//     res.send("Hi i am root");
-// });
+app.get("/", (req, res) => {
+    res.render("firstPage.ejs",{ currUser: req.user });
+});
 
 app.get("/privacy",(req,res) =>{
     res.render("privacy.ejs");
